@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style-home.css">
+    <link href='https://css.gg/lock.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="head">Welcome To Our Portal</div>
+    <div class="nav">
+        <div class="wrapper0">
+            <div class="content-logo">
+                <a href="home.html">
+                    <img src="/images/pngwing.com.png" width="56" height="74" alt="SOB-Logo">
+                    <h1 class="heading">NEW-LIFE</h1>
+                    <h5 class="heading2">Citizens corner of Track Child</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navv">
+        <div class="wrapper">
+            <div class="left">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="display">
+        <p class="para">Show Messages:</p>
+        <marquee behavior="scroll" direction="left" loop="100"><p id="marq"></p></marquee>
+    </div>
+    <div class="scroll-image">
+        <img src="/images/banner.jfif" alt="images" id="imgs" width="100%" height="350px">
+    </div>
+
+    <div class="main">
+        <div class="parts">
+            <ul class="list">
+              <li>
+                <a href="#">
+                    <div class="parts1">Login | <br> Register <br> <img src="images/lock.webp" alt="lock-logo" class="lock"> </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <div class="parts2">My child is <br> missing <br> <img src="/images/question.jpg" alt="question-logo" class="lock">  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <div class="parts3">I have sighted <br> A child<br> <img src="/images/eye.jpg" alt="eye-logo" class="lock"> </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <div class="parts4">Search a <br> Missing child<br> <img src="/images/search.gif" alt="search.logo"  class="lock"> </div>
+                </a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="cont">Please provide maximum and accurate information about the child. Probability of finding the child will increase</p>
+    <script>
+        
+(function display0(){
+    
+    let txt=["Your adivce to inform the nearest police station.","You may contact police at 100 or child helpline at 1098","it is mandatory for police to register FIR in case of missing child"];
+    for(let i of txt)
+    {
+       document.getElementById("marq").innerHTML=txt;
+    }
+})();
+
+(function () {
+    var value=document.getElementById("imgs");
+    var time=3;
+    var filepath='/images/';
+    var images=["banner2.jfif","banner3.jfif","banner.jfif","banner4.jfif","banner5.jfif"];                                             
+    var num=0;
+    var len=images.length;
+    var changeimage= function (){
+        value.src=(filepath + images[num++]);
+        if(num==len) {
+            num=0;
+        }
+    };
+    setInterval(changeimage,time*1000);
+}
+) ();
+    </script>
+</body>
+</html>
