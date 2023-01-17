@@ -21,17 +21,17 @@
     font-weight: 500;
     font-size: 18px;
 }
-img{
+img {
     float: left;
     position: relative;
 }
-h1 {
+h1{
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.3em;
     margin-left: 2em;
 }
-h1 h5 {
+h1 h5{
     float: right;  
 }
 h5 {
